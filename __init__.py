@@ -26,16 +26,14 @@ solver_map = {
     "AM4": solve_am4,
     "AM5": solve_am5,
     "GL1": partial(solve_collocation, family="gauss", s=1),
-    "GL2": partial(solve_collocation, family="gauss", s=2),
+    "GL2": partial(solve_collocation, family="gauss", s=2), 
     "GL3": partial(solve_collocation, family="gauss", s=3),
     "GL4": partial(solve_collocation, family="gauss", s=4),
     "GL5": partial(solve_collocation, family="gauss", s=5),
-    "R1": partial(solve_collocation, family="radau", s=1),
     "R2": partial(solve_collocation, family="radau", s=2),
     "R3": partial(solve_collocation, family="radau", s=3),
     "R4": partial(solve_collocation, family="radau", s=4),
     "R5": partial(solve_collocation, family="radau", s=5),
-    "L1": partial(solve_collocation, family="lobatto", s=1),
     "L2": partial(solve_collocation, family="lobatto", s=2),
     "L3": partial(solve_collocation, family="lobatto", s=3),
     "L4": partial(solve_collocation, family="lobatto", s=4),
@@ -44,3 +42,4 @@ solver_map = {
     "SDIRK3": solve_sdirk3,
     "SDIRK4": solve_sdirk4,
 }
+
